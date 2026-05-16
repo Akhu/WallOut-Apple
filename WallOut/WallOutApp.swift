@@ -4,7 +4,7 @@ import SwiftUI
 import ServiceManagement
 import OSLog
 
-private let logger = Logger(subsystem: "net.globule.WallOut", category: "App")
+private let logger = Logger(subsystem: "fr.picklestudio.WallOut", category: "App")
 
 @main
 struct WallOutApp: App {

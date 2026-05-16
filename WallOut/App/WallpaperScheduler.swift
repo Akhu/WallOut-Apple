@@ -4,7 +4,7 @@ import Foundation
 import Combine
 import OSLog
 
-private let logger = Logger(subsystem: "net.globule.WallOut", category: "Scheduler")
+private let logger = Logger(subsystem: "fr.picklestudio.WallOut", category: "Scheduler")
 
 /// Orchestrates context observation → fetch → apply.
 /// Holds the only strong reference to the fetcher and applier.

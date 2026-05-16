@@ -326,7 +326,7 @@
 					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				PRODUCT_BUNDLE_IDENTIFIER = net.globule.WallOutTests;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.picklestudio.WallOutTests;
 				SDKROOT = macosx;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WallOut.app/Contents/MacOS/WallOut";
 			};
@@ -402,7 +402,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				PRODUCT_BUNDLE_IDENTIFIER = net.globule.WallOut;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.picklestudio.WallOut;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -418,7 +418,7 @@
 					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				PRODUCT_BUNDLE_IDENTIFIER = net.globule.WallOutTests;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.picklestudio.WallOutTests;
 				SDKROOT = macosx;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WallOut.app/Contents/MacOS/WallOut";
 			};
@@ -436,7 +436,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				PRODUCT_BUNDLE_IDENTIFIER = net.globule.WallOut;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.picklestudio.WallOut;
 				SDKROOT = macosx;
 			};
 			name = Release;

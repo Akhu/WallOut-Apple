@@ -3,7 +3,7 @@
 import Foundation
 import OSLog
 
-private let logger = Logger(subsystem: "net.globule.WallOut", category: "AppContainer")
+private let logger = Logger(subsystem: "fr.picklestudio.WallOut", category: "AppContainer")
 
 /// Owns all long-lived objects and wires dependencies together.
 /// Instantiated once and held as @StateObject in WallOutApp.

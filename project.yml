@@ -1,6 +1,6 @@
 name: WallOut
 options:
-  bundleIdPrefix: net.globule
+  bundleIdPrefix: fr.picklestudio
   deploymentTarget:
     macOS: "13.0"
   xcodeVersion: "16.0"
@@ -37,7 +37,7 @@ targets:
       path: WallOut/WallOut.entitlements
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: net.globule.WallOut
+        PRODUCT_BUNDLE_IDENTIFIER: fr.picklestudio.WallOut
         MACOSX_DEPLOYMENT_TARGET: "13.0"
         INFOPLIST_FILE: WallOut/Info.plist
         CODE_SIGN_ENTITLEMENTS: WallOut/WallOut.entitlements
@@ -56,4 +56,4 @@ targets:
       - target: WallOut
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: net.globule.WallOutTests
+        PRODUCT_BUNDLE_IDENTIFIER: fr.picklestudio.WallOutTests
