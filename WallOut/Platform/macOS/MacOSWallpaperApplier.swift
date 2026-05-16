@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 WallOut contributors
 @preconcurrency import AppKit
 
 struct MacOSWallpaperApplier: WallpaperApplying {

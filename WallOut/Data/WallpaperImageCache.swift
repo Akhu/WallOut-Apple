@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 WallOut contributors
 import Foundation
 
 /// Filesystem cache for downloaded wallpaper images.

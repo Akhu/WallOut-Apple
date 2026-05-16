@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// Copyright (C) 2026 WallOut contributors
 import Foundation
 
 /// Translates WallpaperContext into a WallHaven query and maps results to domain models.
