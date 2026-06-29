@@ -19,7 +19,7 @@ struct MenuBarView: View {
         }
         .padding(.vertical, 4)
         .frame(minWidth: 260)
-        .sheet(isPresented: $showSettings) {
+        .sheet(isPresented: $showSettings, onDismiss: { scheduler.refreshNow() }) {
             SettingsView()
         }
     }

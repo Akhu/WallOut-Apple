@@ -17,6 +17,7 @@
 		51477E57643E36C1E938F80C /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B22AD92764CC708DA5FAE3 /* AppContainer.swift */; };
 		51923AF99E5568A640F432B4 /* WallpaperFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48AC38A7DB1DA185E4AF3E /* WallpaperFetching.swift */; };
 		56F9350128A2AA114952D962 /* WallHavenRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0B9134844FDB3112B9C514 /* WallHavenRepository.swift */; };
+		A1B2C3D4E5F6A1B2C3D4E5F6 /* WallpaperPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E5D4C3B2A1F6E5D4C3B2A1 /* WallpaperPreferences.swift */; };
 		7ECB5D72748541D0B21B915B /* WallpaperApplying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919611EE52F9A264DF3094BC /* WallpaperApplying.swift */; };
 		8AAB6207EF973C985D49D832 /* WallpaperScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0E42B0ADCDAB329DFBEBB5 /* WallpaperScheduler.swift */; };
 		8DAFAA457EFCEAD1BA4E4705 /* WallHavenAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EFCF21A8DDE5C0EBF4513F /* WallHavenAPI.swift */; };
@@ -26,6 +27,7 @@
 		CC6B7073C42C35C1A12F4DAE /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EB44045CD8A82DACA9D537 /* MenuBarView.swift */; };
 		D8A0C83EFEF4B6CF35ADA3CF /* MacOSWallpaperApplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFFC78547F02539170C0AEF /* MacOSWallpaperApplier.swift */; };
 		FC6B613289127E7362B924F8 /* TimeSlotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE73ADE149F85B15786750C5 /* TimeSlotTests.swift */; };
+		A1A2A3A4A5A6A7A8A9A0A1A2 /* WallpaperPreferencesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B2B3B4B5B6B7B8B9B0B1B2 /* WallpaperPreferencesTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,10 +59,12 @@
 		A596588549AD78DC6479AC69 /* WallpaperImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperImageCache.swift; sourceTree = "<group>"; };
 		BC0E42B0ADCDAB329DFBEBB5 /* WallpaperScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperScheduler.swift; sourceTree = "<group>"; };
 		BE73ADE149F85B15786750C5 /* TimeSlotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSlotTests.swift; sourceTree = "<group>"; };
+		B1B2B3B4B5B6B7B8B9B0B1B2 /* WallpaperPreferencesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperPreferencesTests.swift; sourceTree = "<group>"; };
 		C2D292F895B6A7148EF99943 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		C9DE9A262F8920A45370E45D /* TimeSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSlot.swift; sourceTree = "<group>"; };
 		D62C4957A7C2B5F1350D555B /* WallOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WallOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB0B9134844FDB3112B9C514 /* WallHavenRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallHavenRepository.swift; sourceTree = "<group>"; };
+		F6E5D4C3B2A1F6E5D4C3B2A1 /* WallpaperPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperPreferences.swift; sourceTree = "<group>"; };
 		F214A35B58B679C5118DA398 /* WallOut.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WallOut.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,6 +105,7 @@
 				72EFCF21A8DDE5C0EBF4513F /* WallHavenAPI.swift */,
 				898716A45E3BB03153743DB1 /* WallHavenDTO.swift */,
 				EB0B9134844FDB3112B9C514 /* WallHavenRepository.swift */,
+				F6E5D4C3B2A1F6E5D4C3B2A1 /* WallpaperPreferences.swift */,
 			);
 			path = WallHaven;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				BE73ADE149F85B15786750C5 /* TimeSlotTests.swift */,
+				B1B2B3B4B5B6B7B8B9B0B1B2 /* WallpaperPreferencesTests.swift */,
 			);
 			path = WallOutTests;
 			sourceTree = "<group>";
@@ -286,6 +292,7 @@
 				8DAFAA457EFCEAD1BA4E4705 /* WallHavenAPI.swift in Sources */,
 				2F3ABFE0752C978B9E26E8BA /* WallHavenDTO.swift in Sources */,
 				56F9350128A2AA114952D962 /* WallHavenRepository.swift in Sources */,
+				A1B2C3D4E5F6A1B2C3D4E5F6 /* WallpaperPreferences.swift in Sources */,
 				AD61911CAA7A35C92DAA9398 /* WallOutApp.swift in Sources */,
 				48FCC581A9213D1DEE64FBD9 /* Wallpaper.swift in Sources */,
 				7ECB5D72748541D0B21B915B /* WallpaperApplying.swift in Sources */,
@@ -301,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC6B613289127E7362B924F8 /* TimeSlotTests.swift in Sources */,
+				A1A2A3A4A5A6A7A8A9A0A1A2 /* WallpaperPreferencesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
