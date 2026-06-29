@@ -7,14 +7,20 @@ import Foundation
 actor WallHavenRepository: WallpaperFetching {
     private let api: WallHavenAPI
     private let imageCache: WallpaperImageCache
+    private let preferencesProvider: @Sendable () -> WallpaperPreferences
 
-    init(api: WallHavenAPI, imageCache: WallpaperImageCache) {
+    init(
+        api: WallHavenAPI,
+        imageCache: WallpaperImageCache,
+        preferencesProvider: @escaping @Sendable () -> WallpaperPreferences = { .load() }
+    ) {
         self.api = api
         self.imageCache = imageCache
+        self.preferencesProvider = preferencesProvider
     }
 
     func fetchWallpaper(for context: WallpaperContext) async throws -> Wallpaper {
-        let query = WHSearchQuery.from(context: context)
+        let query = WHSearchQuery.from(context: context, preferences: preferencesProvider())
         let response = try await api.search(query: query)
         guard let first = response.data.first else {
             throw WallHavenError.noResultsFound
@@ -33,13 +39,13 @@ actor WallHavenRepository: WallpaperFetching {
 
 // MARK: - Context → query mapping
 
-private extension WHSearchQuery {
-    static func from(context: WallpaperContext) -> WHSearchQuery {
+extension WHSearchQuery {
+    static func from(context: WallpaperContext, preferences: WallpaperPreferences) -> WHSearchQuery {
         var query = WHSearchQuery()
         query.sorting = .random
-        query.atleast = "2560x1440"
+        query.atleast = preferences.minResolution
         query.ratios = "16x9"
-        query.categories = .general
+        query.categories = preferences.categories
 
         switch context.timeSlot {
         case .dawn:
